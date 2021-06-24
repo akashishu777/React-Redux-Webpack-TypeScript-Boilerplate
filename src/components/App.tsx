@@ -1,3 +1,4 @@
+import { Button } from "carbon-components-react";
 import * as React from "react";
 import { hot } from "react-hot-loader";
 
@@ -9,6 +10,7 @@ class App extends React.Component<Record<string, unknown>, undefined> {
     return (
       <div className="app">
         <h1>Hello World!</h1>
+        <Button>Submit</Button>
         <img src={reactLogo.default} height="480" />
       </div>
     );
