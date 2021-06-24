@@ -1,17 +1,15 @@
-import { Button } from "carbon-components-react";
 import * as React from "react";
 import { hot } from "react-hot-loader";
 
 const reactLogo = require("./../assets/img/react_logo.svg");
 import "./../assets/scss/App.scss";
+import { NavigationMenu } from "./NavigationMenu";
 
 class App extends React.Component<Record<string, unknown>, undefined> {
   public render() {
     return (
-      <div className="app">
-        <h1>Hello World!</h1>
-        <Button>Submit</Button>
-        <img src={reactLogo.default} height="480" />
+      <div className="">
+        <NavigationMenu />
       </div>
     );
   }
